@@ -1,14 +1,15 @@
 # Classificação de Dígitos Manuscritos com Machine Learning
 
 Mini-projeto avaliativo do Módulo 2. O projeto compara modelos de Machine
-Learning para classificar imagens de dígitos manuscritos do dataset MNIST.
+Learning para classificar imagens de dígitos manuscritos do conjunto de dados
+MNIST.
 
 ## Objetivo
 
-Treinar e avaliar Random Forest, KNN, SVM e MLP, considerando acurácia,
-precisão, recall, F1-score e tempo de treinamento. O notebook também avalia
-o comportamento de um modelo diante de classes que não apareceram no treino
-e realiza inferência em uma imagem manuscrita própria.
+Treinar e avaliar modelos como Random Forest, KNN, SVM e MLP, considerando
+acurácia, precisão, recall, F1-score e tempo de treinamento. O notebook também
+analisa o comportamento de um modelo diante de classes que não aparecem no
+conjunto de treino e realiza inferência em uma imagem manuscrita própria.
 
 ## Tecnologias
 
@@ -38,7 +39,7 @@ data/                   # cache local do MNIST, criado automaticamente
    pip install -r requirements.txt
    ```
 
-3. Abra `main.ipynb` no Jupyter Notebook ou VS Code.
+3. Abra o arquivo `main.ipynb` no Jupyter Notebook ou no VS Code.
 4. Execute as células em ordem, da Fase 1 até a Fase 5.
 5. Para a Fase 5.3, mantenha uma imagem `.jpg` ou `.jpeg` dentro da pasta
    `imagem`.
@@ -51,16 +52,16 @@ Fase 5.3.
 O notebook possui a variável `AMBIENTE` antes da célula do SVM:
 
 - `AMBIENTE = "local"`: usa uma amostra estratificada de 12.000 imagens no
-  SVM e desativa a calibração de probabilidades desse modelo. É o perfil para
-  desenvolvimento e testes rápidos no computador.
+  SVM e desativa a calibração de probabilidades desse modelo. Esse é o perfil
+  usado para desenvolvimento e testes rápidos no computador.
 - `AMBIENTE = "colab"`: usa todas as imagens de treinamento e probabilidades
-  calibradas. Utilize este perfil para a execução final e para registrar os
-  resultados do projeto.
+  calibradas. Este perfil é recomendado para a execução final e para registrar
+  os resultados do projeto.
 
 O SVM com kernel RBF não usa GPU automaticamente no scikit-learn; a diferença
-de velocidade no Colab normalmente vem de CPU, memória e bibliotecas
-numéricas. Ao apresentar os resultados, informe o perfil usado, pois tempos e
-acurácia do SVM podem variar entre eles.
+na velocidade no Colab normalmente vem da CPU, da memória e das bibliotecas
+numéricas. Ao apresentar os resultados, informe o perfil utilizado, pois tempos
+ e acurácia do SVM podem variar entre eles.
 
 ## Possíveis melhorias
 
