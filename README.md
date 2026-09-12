@@ -116,7 +116,7 @@ Fase 5.3.
 
 O notebook possui a variável `AMBIENTE` antes da célula do SVM:
 
-- `AMBIENTE = "local"`: usa uma amostra estratificada de 12.000 imagens no
+- `AMBIENTE = "local"`: usa uma amostra estratificada de 25.000 imagens no
   SVM e desativa a calibração de probabilidades desse modelo. Esse é o perfil
   usado para desenvolvimento e testes rápidos no computador.
 - `AMBIENTE = "colab"`: usa todas as imagens de treinamento e probabilidades
