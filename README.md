@@ -40,15 +40,19 @@ outputs/graficos/       # gráficos gerados pelo notebook
 data/                   # cache local do MNIST, criado automaticamente
 ```
 
+## Requisitos do ambiente
+
+Este projeto foi desenvolvido e validado com Python 3.12.8 em ambiente virtual (venv). É recomendado utilizar exatamente essa versão para evitar incompatibilidades com TensorFlow, NumPy e scikit-learn.
+
 ## Como executar
 
 ### 1) Execução local (recomendado para desenvolvimento)
 
-1. Crie e ative um ambiente virtual Python com Python 3.11 ou 3.12.
+1. Crie e ative um ambiente virtual Python 3.12.8.
 2. Instale as dependências:
 
    ```bash
-   python -m venv .venv
+   py -3.12 -m venv .venv
    .venv\Scripts\activate
    pip install -r requirements.txt
    ```
@@ -137,6 +141,38 @@ funciona corretamente com estas versões:
 - NumPy: `>=2.0,<2.8`
 - SciPy: `>=1.14.1`
 - scikit-learn: `>=1.5.2`
+
+## Verificação de instalação em ambiente limpo
+
+Antes da entrega final, validamos a instalação do projeto em uma nova virtual environment para confirmar que as dependências do arquivo `requirements.txt` são compatíveis entre si.
+
+### Linux
+
+```bash
+python3 -m venv .venv-test
+source .venv-test/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python -c "import pandas, numpy, matplotlib, seaborn, cv2, scipy, sklearn, tensorflow; print('OK')"
+```
+
+### Windows
+
+```powershell
+python -m venv .venv-test
+.venv-test\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python -c "import pandas, numpy, matplotlib, seaborn, cv2, scipy, sklearn, tensorflow; print('OK')"
+```
+
+Se a importação funcionar sem erros, a instalação está correta e o ambiente é compatível com o projeto.
+
+### Observações
+
+- O projeto foi testado com versões compatíveis de Python, NumPy, SciPy, scikit-learn e TensorFlow.
+- O TensorFlow costuma ser o pacote mais sensível a problemas de versão e ambiente.
+- Recomendamos usar Python 3.11 ou 3.12 para maior compatibilidade.
 
 ## Possíveis melhorias
 
