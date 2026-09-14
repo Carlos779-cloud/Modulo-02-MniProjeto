@@ -180,3 +180,7 @@ Se a importação funcionar sem erros, a instalação está correta e o ambiente
 - Avaliar uma rede convolucional (CNN).
 - Testar mais imagens manuscritas e diferentes condições de iluminação.
 - Criar uma interface simples para envio de imagens.
+
+Entrega Prevista = 14/09/2026
+
+Autor = Carlos João Reinert
