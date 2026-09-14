@@ -1,4 +1,5 @@
-# Dependências do projeto (versões compatíveis com Python 3.12)
+# Ambiente recomendado: Python 3.12.8 em venv
+# Dependências do projeto (compatíveis com Python 3.12.8)
 pandas>=2.2.0
 numpy>=2.0.0,<2.8.0
 matplotlib>=3.8.0
