@@ -2,12 +2,12 @@
 
 ## Link do vídeo
 
-- Vídeo: [insira o link do vídeo]
+- Vídeo: [https://share.vidyard.com/watch/tWWcRAykF4VXGP1nDCg9D9]
 
 ## Clone do repositório
 
 ```bash
-git clone [insira o link do repositório]
+git clone [git@github.com:Carlos779-cloud/Modulo-02-MniProjeto.git]
 ```
 
 Mini-projeto avaliativo do Módulo 2. O projeto compara modelos de Machine
